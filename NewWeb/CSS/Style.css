@@ -1,0 +1,153 @@
+body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Fax Regular", sans-serif;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    height: 2000px;
+}
+
+#nav {
+    font-family: "Lucida Fax Regular";
+    background: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav img {
+    height: 48px;
+    float: left;
+    border: none;
+}
+
+#nav-wrapper {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li:hover {
+    color: white;
+    background-color: DarkOrange;
+}
+
+#nav ul li a,visited {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#main {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
+    border-color: #f1f1f1;
+    background-color: #fff;
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px;
+    margin: 70px 10px 10px 10px;
+}
+
+#content {
+    
+}
+
+#homeBox {
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+    
+    
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+    padding-bottom: 3px;
+    border-bottom: 2px solid orange;
+    color: #000000;
+    font-size: 40px;
+    margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Times New Roman", serif;
+    padding-bottom: 3px;
+    color: Orange;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: "Times New Roman", serif;
+    padding-bottom: 3px;
+    color: Black;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+#slider {
+    width: 100%;
+    height: 33%;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#slider > img{
+    width: 100%;
+    height: 900px;
+    float: left;
+    display: none;
+    border-radius: 4px 4px 4px 4px;
+}
+
+c {
+    width: 100px;
+    text-align: center;
+    background: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    border-color: #ffffcc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+c:hover {
+    color: white;
+    background-color: DarkOrange;
+
+}
+
+c.left {
+    float: left;
+    margin-left: 10px;
+}
+
+c.right {
+    float: right;
+    margin-right: 10px;
+}
