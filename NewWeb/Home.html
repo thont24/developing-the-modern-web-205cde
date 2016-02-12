@@ -34,24 +34,34 @@
                 </ul>
             </div>
         </div>
-        <!--
-        <div class="wrapper" style="margin: 0 auto; padding-top: 48px">
-        <div id="slider">
-            <img id="1" src="IMG/Batman.jpg">
-            <img id="2" src="IMG/Lara.jpg">
-            <img id="3" src="IMG/Metal-Panth.jpg">
-            <img id="4" src="IMG/Riven.jpg">
-            <img id="5" src="IMG/Space.jpg">    
-        </div>
         
+        <div class="wrapper">
+            <div id="slider">
+                <img id="1" src="IMG/Placeholder.jpg">   
+        </div>
+        <!--    
         <c href="#" class="left" onclick="prev(); return false;">Previous</c>
         <c href="#" class="right" onclick="next(); return false;">Next</c>
         //-->
-    </div> 
+        </div> 
     </header>
 
 <script src="JS/jquery.js"></script>
 <script src="JS/slider.js"></script>
+
+    <div id="headBox">
+        <div id="homeBox">
+            <h1>Welcome To My Website</h1>
+            <h2>A portfolio of work, a database of ideas and more...</h2>
+            <h3><i><p id="demo"></p></i></h3>
+            <p>In this website i will be showing my work that i have completed at university & in my free time.
+            Amongst other things i will show, hobbies, gaming interests and hopefully in the near future my YouTube channel.
+            </p>
+            <script>
+            document.getElementById("demo").innerHTML = Date();
+            </script>
+        </div>
+    </div>
     
     <div id="main">
         <div id="content">
@@ -62,15 +72,7 @@
         </div>
     </div>
     
-    <div id="HomeBox">
-        <div id="content">
-            <h1>Welcome to my website</h1>
-            <h2>A portfolio of all of my work and more...</h2>
-            <h3><i>Thursday</i></h3>
-            
-            
-        </div>
-    </div>
+    
     
 </body>
 </html>

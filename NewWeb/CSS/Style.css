@@ -2,14 +2,15 @@ body {
     overflow-y: scroll;
     margin: 0;
     padding: 0;
-    font-family: "Lucida Fax Regular", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-size: 16px;
     background-color: #f1f1f1;
     height: 2000px;
+    position: relative;
 }
 
 #nav {
-    font-family: "Lucida Fax Regular";
+    font-family: "Playfair Display";
     background: #000;
     box-shadow: 0 0 8px rgba(0, 0, 0, 1);
     position: fixed;
@@ -52,40 +53,45 @@ body {
     text-decoration: none;
 }
 
-#main {
-    width: 95%;
+#headBox {
+    width: 33.33%;
+    position: relative;
+    bottom: 90px;
     margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
+    border-color: #f1f1f1;
+    background-color: #fff;
+    border-radius: 4px 4px 4px 4px;
+    padding: 10px;
+}
+
+#homeBox {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    position: relative;
+    bottom: 50px;
     text-align: left;
     box-shadow: 0 0 10px rgba(1, 1, 1, 1);
     border-color: #f1f1f1;
     background-color: #fff;
     border-radius: 4px 4px 4px 4px;
     padding: 20px;
-    margin: 70px 10px 10px 10px;
 }
 
-#main1 {
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
-    border-color: #f1f1f1;
-    background-color: #fff;
-    border-radius: 4px 4px 4px 4px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-#homeBox {
+#content {
     width: 100%;
     margin: 0 auto;
     text-align: left;
-    margin-top: 70px;
 }
 
 h1 {
-    font-family: "Times New Roman", serif;
+    font-family: "Playfair Display", serif;
     padding-bottom: 3px;
     border-bottom: 2px solid orange;
     color: #000000;
@@ -95,7 +101,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Times New Roman", serif;
+    font-family: "Playfair Display", serif;
     padding-bottom: 3px;
     color: Orange;
     font-size: 25px;
@@ -104,7 +110,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Times New Roman", serif;
+    font-family: "Playfair Display", serif;
     padding-bottom: 3px;
     color: Black;
     font-size: 14px;
@@ -117,20 +123,17 @@ h3 {
 
 #slider {
     width: 100%;
-    height: 33%;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
-#slider > img{
+#slider > img {
     width: 100%;
-    height: 900px;
     float: left;
-    display: none;
-    border-radius: 4px 4px 4px 4px;
 }
 
-c {
+/* c {
     width: 100px;
     text-align: center;
     background: black;
@@ -139,7 +142,6 @@ c {
     color: white;
     border-radius: 4px 4px 4px 4px;
     border-color: #ffffcc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 
 c:hover {
@@ -148,12 +150,12 @@ c:hover {
 
 }
 
-c.left {
+left {
     float: left;
     margin-left: 10px;
 }
 
-c.right {
+right {
     float: right;
     margin-right: 10px;
-}
+} */
