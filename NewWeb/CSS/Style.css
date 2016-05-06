@@ -70,6 +70,22 @@ visited {
     text-decoration: none;
 }
 
+#main {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    overflow: auto;
+}
+
+#content {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px;
+    margin: 70px 0 50px 0;
+    overflow: auto;
+}
+
 #footer {
     background-color: black;
     color: Orange;
@@ -143,6 +159,52 @@ h3 {
     float: left;
 }
 
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+inpu,
+textarea {
+    font: 1em sans-serif;
+    width: 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
+
 
 /* 
 
@@ -174,22 +236,6 @@ right {
 } 
 
 */
-
-#main {
-    width: 95%;
-    margin: 0 auto;
-    text-align: left;
-    overflow: auto;
-}
-
-#content {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 4px 4px 4px 4px;
-    padding: 20px;
-    margin: 70px 0 50px 0;
-    overflow: auto;
-}
 
 #slideshow {
     margin: 50px auto;

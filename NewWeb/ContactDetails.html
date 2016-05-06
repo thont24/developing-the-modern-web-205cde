@@ -24,11 +24,79 @@
     </div>
     <div id="main">
         <div id="content">
+
             <h1>Want To Get In Touch With Me?</h1>
             <h2>Contact Details</h2>
             <h3><i><p id="demo"></p></i></h3>
+
+            <form action="/my-handling-form-page" method="post" style="float: right">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Send your message!</button>
+                </div>
+            </form>
+            <BR />
             <p><b>Address</b></p> <i><p>29 Manse Close</p> <p>Exhall</p> <p>Coventry</p> <p>Warwickshire</p> <p>CV7 9NT</p></i>
             <hr>
+
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='float: right;overflow:hidden;height:390px;width:600px;'>
+                <div id='gmap_canvas' style='height:390px;width:600px;'></div>
+                <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+                <div><small><a href="http://www.proxysitereviews.com/instantproxies">instantproxies</a></small></div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='float:right;overflow:hidden;height:390px;width:600px;'>
+                <div id='gmap_canvas' style='height:390px;width:600px;'></div>
+                <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+                <div><small><a href="http://www.proxysitereviews.com/instantproxies">instantproxies</a></small></div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div>
+            <script type='text/javascript'>
+                function init_map() {
+                    var myOptions = {
+                        zoom: 13,
+                        center: new google.maps.LatLng(52.406822, -1.519692999999961),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(52.406822, -1.519692999999961)
+                    });
+                    infowindow = new google.maps.InfoWindow({
+                        content: '<strong>Where I Am Located</strong><br>Coventry University, United Kingdom<br>'
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, 'load', init_map);
+            </script>
+
             <p><b>Email</b></p> <i><p>lukethorntonsidney@gmail.com</p></i>
             <p><b>Phone</b></p> <i><p>Mobile: 07341841519</p></i> <i><p>Home: 02476732747</p></i>
             <p><b>Find me on social media via the links in the top right corner.</b></p>
@@ -37,18 +105,6 @@
             </script>
         </div>
     </div>
-    
-    <form action="https://getsimpleform.com/messages?form_api_token=<form_api_token>" method="post">
-
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
-
-  <!-- all your input fields here.... -->
-  <input type='text' name='test' />
-
-  <input type='submit' value='Test form' />
-</form>
-
 
     <div id="footer">
         Copyright - Luke Thornton --- Please note that this site is a work in progress!!!
