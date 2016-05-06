@@ -1,4 +1,7 @@
-/*! jQuery v2.1.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */ ! function(a, b) {
+//This is the jquery imported library.
+
+/*! jQuery v2.1.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
+! function(a, b) {
   "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
     if (!a.document) throw new Error("jQuery requires a window with a document");
     return b(a)
@@ -2669,12 +2672,12 @@
         else try {
           b = g(b)
         }
-        catch (l) {
-          return {
-            state: "parsererror",
-            error: g ? l : "No conversion from " + i + " to " + f
-          }
+      catch (l) {
+        return {
+          state: "parsererror",
+          error: g ? l : "No conversion from " + i + " to " + f
         }
+      }
     }
     return {
       state: "success",

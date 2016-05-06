@@ -1,65 +1,89 @@
 <!DOCTYPE html>
+<!-- Setting up the webpage -->
 <html>
 
 <head>
     <title>Luke Thornton - Home</title>
+    <!-- Give the page a title so the user knows what tab it is. -->
     <link rel="stylesheet" href="CSS/Style.css">
+    <!-- Calling the style sheet so it knows which one to refer too. -->
 </head>
 
 <bodyhome>
     <header>
         <div id="nav">
+            <!-- This div is calling the 'nav' section in Style.css to design the nav bar, which this section is all about. -->
             <a href="Home.html">
+                <!-- This is for the logo in the top left corner which when clicked re-directs you to my homepage. -->
                 <img src="IMG/Logo1.png" alt="Home" style="padding-left:5px">
             </a>
             <a href="https://www.youtube.com/channel/UCa2qDlIzjtOFeaTwxJqyIog">
+                <!-- This is the YouTube logo, which when clicked redirects you respectively to my YouTube channel. -->
                 <img src="IMG/YouTube.png" alt="My YouTube Channel" style="width:35px; height:33px; float:right; padding-top:8px; padding-left:4px; padding-right:5px">
             </a>
             <a href="https://twitter.com/LukeT1995">
+                <!-- This is the Twitter logo, which when clicked redirects you respectively to my Twitter page. -->
                 <img src="IMG/twitter.png" alt="My Twitter Page" style="width:40px; height:40px; float:right; padding-top:4px;">
             </a>
             <a href="https://instagram.com/thornt24">
+                <!-- This is the Instagram logo, which when clicked redirects you respectively to my Instagram. -->
                 <img src="IMG/instagram.png" alt="My Instagram Page" style="width:40px; height:40px; float:right; padding-top:4px">
             </a>
             <a href="https://www.facebook.com/luke.thornton.104">
+                <!-- This is the Facebook logo, which when clicked redirects you respectively to my Facebook. -->
                 <img src="IMG/facebook.png" alt="My Facebook Page" style="width:40px; height:40px; float:right; padding-top:4px">
             </a>
 
 
             <div id="nav-wrapper">
+                <!-- This is calling the css once again to style the buttons on the nav bar. This is done by using a list of buttons with links to their pages and styled with CSS. -->
                 <ul>
                     <li><a href="Home.html">Home</a></li>
+                    <!-- A link in the navigation that will take you back to the home screen and so on... -->
                     <li><a href="AboutUs.html">About Me</a></li>
                     <li><a href="Portfolio.html">Portfolio</a></li>
                     <li><a href="YouTube.html">YouTube</a></li>"</li>
                     <li><a href="ContactDetails.html">Contact Details</a></li>
-
                 </ul>
             </div>
         </div>
+    </header>
 
-        <div class="wrapper">
-            <div id="slider">
-                <img id="1" src="IMG/Placeholder.jpg">
-            </div>
-            <!--    
+    <!-- ******************************************************************* -->
+    <!-- All of the above section is the same for every page. The title of the page, stylesheet, and the all important navigation bar. -->
+
+    <!-- ******************************************************************* -->
+    <!-- Below is a class called wrapper which was orignally an image gallery. It was capable of auto sliding to the next image or via clicking 
+        the previous/next buttons hence the slider.js script which was resposible for this. I kept the script though in case i wanted to use this again 
+        at some other time. I changed this though as i preferred to just have a simple home screen which is inviting to new comers to the site and looks 
+        more professional. -->
+
+    <div class="wrapper">
+        <div id="slider">
+            <img id="1" src="IMG/Placeholder.jpg">
+        </div>
+
+        <!-- These are the buttons that i kept in place to change the image on the gallery discussed above.
         <c href="#" class="left" onclick="prev(); return false;">Previous</c>
         <c href="#" class="right" onclick="next(); return false;">Next</c>
         //-->
-        </div>
-    </header>
-
-    <script src="JS/jquery.js"></script>
-    <script src="JS/slider.js"></script>
+    </div>
 
     <div id="headBox">
+        <!-- This is the start of the content on the page. It, and the div after it are settign up the content. -->
         <div id="homeBox">
             <h1>Welcome To My Website</h1>
+            <!-- This is the main heading on every page -->
             <h2>A portfolio of work, a database of ideas and more...</h2>
+            <!-- This is the orange heading on each page, i.e. a small description -->
             <h3><i><p id="demo"></p></i></h3>
+            <!-- This is a little piece of code that gets the current time and prints it as the third heading, in italics -->
             <p>In this website i will be showing my work that i have completed at university & in my free time. Amongst other things i will show, hobbies, gaming interests and hopefully in the near future my YouTube channel.
                 <BR />
                 <BR /><b>"Do or do not. There is no try"</b></p>
+            <!-- This paragraph is going to be the main body on every page. This is where all the main text and content is going to go -->
+
+            <!-- This little snippet of script is to get the current date and time for heading 3 above.-->
             <script>
                 document.getElementById("demo").innerHTML = Date();
             </script>
